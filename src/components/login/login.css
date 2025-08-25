@@ -1,0 +1,123 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../../../public/images/study-girl.jpg") no-repeat center center/cover;
+    padding: 20px;
+    width: 1200px;
+    height: 600px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 28px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.login-box h5 {
+    font-weight: 600;
+    color: #222;
+}
+
+.MuiButton-root {
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1976d2, #2196f3);
+    transition: all 0.3s ease-in-out;
+}
+
+.MuiButton-root:hover {
+    background: linear-gradient(135deg, #1565c0, #1976d2);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-links a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .login-box {
+        max-width: 80%;
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        max-width: 85%;
+        padding: 28px 20px;
+    }
+
+    .login-box h5 {
+        font-size: 20px;
+    }
+
+    .MuiButton-root {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* Small Mobiles */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-box {
+        max-width: 95%;
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+
+    .login-box h5 {
+        font-size: 18px;
+    }
+
+    .MuiButton-root {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .login-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
